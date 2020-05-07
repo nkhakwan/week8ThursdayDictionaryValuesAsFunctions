@@ -26,7 +26,6 @@ public class Game
 
   public int AgeOnMercury(int Age, int Multiplier)
   {
-    Console.WriteLine("we are in the first function");
     return Age*Multiplier;
   }
 
