@@ -8,7 +8,8 @@ namespace Gamer
   {
     public static void Main()
     {
-      Console.WriteLine(GetName());
+      Game LetsStartNewGame = new Game(67 , 3 , 6);
+      Console.WriteLine(LetsStartNewGame.CalculateValue[1]);
     }
   }
 }

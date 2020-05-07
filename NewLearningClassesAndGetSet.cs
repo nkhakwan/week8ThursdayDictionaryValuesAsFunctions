@@ -3,57 +3,35 @@ namespace Gamer.Testing
 public class Game
 {
   // Private fields
-  private string _name;
-  private int _pointTotal;
-  private string _stateOfMind;
+  public string Age { get; set; }
+  public int Multiplier { get; set; }
+  public int Divider { get; set; }
+  //public int ActualValue { get; set; }
+  private Dictionary<int, Action> CalculateValue { get; set; }
 
   // Constructor
-  public Game()
+  public Game(int age, int multiplier, int divider)
   {
-    _name = "default";
-    _pointTotal = 0;
-    _stateOfMind = "neutral";
+    Age = age;
+    Multiplier = multiplier;
+    Divider = divider;
+    //ActualValue = 0;
+    CalculateValue = new Dictionary<int, Action>() { {1, () => AgeOnMercury()}, {2, () => AgeOnJupiter() } };
   }
 
-  // Getters and Setters for fields
-  public string GetName()
+
+
+  public int AgeOnMercury(int Age, int Multiplier)
   {
-    return _name;
+    return Age*Multiplier;
   }
 
-  public void SetName(string name)
+  public int AgeOnJupiter(int Age, int Divider)
   {
-    _name = name;
+    return Age*Divider;
   }
 
-  public int GetPointTotal()
-  {
-    return _pointTotal;
-  }
-
-  public void SetPointTotal(int pointTotal)
-  {
-    _pointTotal = pointTotal;
-  }
-
-  public string GetStateOfMind()
-  {
-    return _stateOfMind;
-  }
-
-  public void SetStateOfMind(string stateOfMind)
-  {
-    _stateOfMind = stateOfMind;
-  }
-
-  // Public method
-  /*public void DetermineNextSteps()
-  {
-    GetStateOfMind();
-    GetPointTotal();
-    GetName();
-  }*/
-
+  
   
   
 
