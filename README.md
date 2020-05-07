@@ -1,12 +1,12 @@
 # _Epicodus C# Practice_
 
-#### _Epicodus Week 8 Wednesday C# Prime Number sifter_
+#### _Epicodus Week 8 Thursday C# Dictionary that has functions as values_
 
 #### By _**KhanSahab**_
 
 ## Description
 
-_The code when run asks a number and upon entering number displays back all the prime numbers from 1 till the number that is inputted at the console_
+_When run the code calls keys in a dictionary that contain function calls as values. Each key calls the corresponding function and return the value. It was fun finding this new facility_
 
 ## Setup/Installation Requirements
 
@@ -25,16 +25,17 @@ _Have a bug or an issue with this application? call 999-503-9999_
 
 ## Technologies Used
 
-**C# Classes**
-_C# objects_
-**C# constructors**
-_C# Lists and forEach loop_
-namespace
+_getters and Setters_
+_Dictionaries with complex settings_
+_namespaces_
+_classes_
+
 
 
 ### Specs 
-* Input::: When run the program asks to input a number
-* Output::: Displays back all the prime numbers that have a value equal to or lower than the inputted number
+*Gives you the age at planet Mercury and Planet Jupiter respectively when a person is 67 years old on Planet Earth.
+
+
 ### License
 
 This software is licensed under the Epicodus inc license.
