@@ -18,6 +18,13 @@ namespace CarsIOwned
       NewVenture.Add(6, "Toyota Corolla");
       NewVenture.Add(7, "Nissan Quest");
       NewVenture.Add(8, "Nissan Sentra");
+       List<int> MyKeys = new List<int>(NewVenture.Keys);
+      for (int i=1; i<MyKeys.Count; i=i+1)
+      {
+        Console.WriteLine("here is the list of keys" + " " +MyKeys[i]);
+
+      }
+
 
       for (int i=1; i<NewVenture.Count+1; i=i+1)
       {
