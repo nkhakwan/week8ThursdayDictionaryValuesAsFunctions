@@ -9,7 +9,9 @@ namespace Gamer
     public static void Main()
     {
       Game LetsStartNewGame = new Game(67 , 3 , 6);
-      Console.WriteLine(LetsStartNewGame.CalculateValue[1]);
+      Console.WriteLine(LetsStartNewGame.CalculateValue[1].Invoke());
+      Console.WriteLine(LetsStartNewGame.CalculateValue[2].Invoke());
     }
   }
 }
+// youre welcome
